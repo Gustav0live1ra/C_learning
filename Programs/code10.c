@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+                                        //count caracter of a number//
 int main()
 {   int n, cont = 0;
     printf("digite um número qualquer: ");
