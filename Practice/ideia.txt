@@ -1,0 +1,1 @@
+criar programa que ler string e retira elementos especificos contidos no meio dela, deslocando todo o array para a esquerda.
