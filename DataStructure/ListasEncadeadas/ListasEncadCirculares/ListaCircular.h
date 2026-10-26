@@ -27,5 +27,17 @@ int lista_cheia(Lista* li);
 void imprime_lista(Lista *li);
 int maior_matricula(Lista *li, int *mat);
 int conta_aprovados(Lista* li);
+int buscaCiclica(Lista *li, int k, struct aluno *al);
+int remove_lista_pos(Lista *li, int pos);
+int rotaciona_lista(Lista *li, int k);
+int concatena_lista(Lista *li1, Lista *li2);
+int josephus(Lista *li, int k, int *sobrevivente);
+
+//versões com *li guardando o final
+int insere_lista_inicio2(Lista* li, struct aluno al);
+int insere_lista_final2(Lista *li, struct aluno al);
+int remove_lista_inicio2(Lista *li);
+int tamanho_lista2(Lista *li);
+int imprime_lista2(Lista *li);
 
 #endif
