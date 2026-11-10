@@ -378,3 +378,18 @@ int mescla_tarefas(ListaTarefas* dst, ListaTarefas* src){
     *src = NULL;
     return contador;
 }
+
+int insere_tarefa_final_rapido(ListaTarefas* li, struct tarefa t, ListaTarefas *final){
+    if(li == NULL) return 0;
+
+    Elem *no = (Elem*) malloc(sizeof(*no));
+    if(no == NULL) return 0;
+    no->dados = t;
+    no->prox = NULL;
+    if((*li) == NULL)//lista vazia
+        *li = no;
+    else
+        (*final)->prox = no;
+    *final = no;
+    return 1;
+}

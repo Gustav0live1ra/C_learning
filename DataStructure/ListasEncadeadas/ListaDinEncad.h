@@ -32,5 +32,6 @@ int remove_tarefas_prioridade(ListaTarefas* li, int prioridade);
 int inverte_lista(ListaTarefas* li);
 int remove_tarefa_pos(ListaTarefas* li, int pos);
 int mescla_tarefas(ListaTarefas* dst, ListaTarefas* src);
+int insere_tarefa_final_rapido(ListaTarefas* li, struct tarefa t, ListaTarefas *final);
 
 #endif
